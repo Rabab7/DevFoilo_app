@@ -1,0 +1,250 @@
+
+.W-fit{
+    width: fit-content;
+}
+
+.w-fill{
+    width: 100%;
+}
+
+.h-special{
+    height: 432.8px;
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+.title p::before{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color:blue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+
+}
+
+.content-h h2::before{
+    content: "";
+    width: 90px;
+    height: 3px;
+    background-color:blue;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 45px;
+    bottom:-7px;
+    
+    }
+
+.i-color{
+    color:#0000ffd6;
+
+}
+
+.list-decoration{
+    list-style-type:none;
+}
+
+
+
+/* header style */
+
+.header{
+    background-image: url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+   
+}
+
+
+.header span {
+    font-family: monospace;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.header span:nth-of-type(1){
+    animation: developer 5s infinite steps(9);
+}
+
+.header span:nth-of-type(2){
+    animation:freelancer 5s infinite steps(10);
+}
+
+.header span:nth-of-type(3){
+    animation:photographer 5s infinite steps(12);
+}
+
+.header span:nth-of-type(4){
+    animation:designer 5s infinite steps(8);
+
+}
+
+@keyframes developer {
+    0% , 50% ,100% ,75% {
+        width: 0%;
+    }
+
+    25% , 13%{
+        width: calc(9 * 24.74px);
+    }
+    
+}
+
+@keyframes freelancer {
+    0% ,100% , 75% {
+        width: 0%;
+    }
+
+    50% , 38%{
+        width: calc(10 * 24.74px);
+    }
+    
+}
+
+@keyframes photographer {
+    0% , 50% , 100% {
+        width: 0%;
+    }
+
+    75% , 63%{
+        width: calc(12 * 24.74px);
+    }
+    
+}
+
+@keyframes designer {
+    75% , 50% , 25% , 0%{
+        width: 0%;
+    }
+
+    100% , 88%{
+        width: calc(8 * 24.74px);
+    }
+    
+}
+
+/* navbar style */
+
+.navbar a{
+    position: relative;
+    
+}
+
+.navbar a::before{
+    content:"";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 1%;
+    bottom: -2px;
+    background-color: brown;
+    
+}
+
+.navbar a:hover::before{
+    width: 40px;
+    
+}
+
+/* about style */
+.about .container{
+    box-shadow: 1px 0px 5px 1px;
+
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    
+    background-color:rgba(0, 0, 255, 0.352);
+}
+
+
+/* services section */
+.services .inner .icon{
+    width:70px ;
+    height: 70px;
+
+}
+
+.services .inner:hover .icon{
+    background-color:blue;
+    color: antiquewhite;
+    
+}
+
+.services .inner{
+    box-shadow: 1px 0px 5px 1px;
+    border-radius: 20px ;
+}
+
+/* counter section */
+.counter {
+    background:url(../images/counters-bg.jpg) no-repeat center center/cover fixed;
+    position: relative;
+    padding: 50px 0
+}
+
+.counter::before {
+    content: "";
+    background: rgba(0, 0, 200, 0.600); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.counter .inner .icon{
+    width:70px ;
+    height: 70px;
+
+}
+
+.counter .inner .icon{
+    background-color:#0000ffb6;
+   
+}
+
+/* portfolio style */
+
+ img:hover{
+    cursor: pointer;
+}
+
+.portfolio .work-box{
+    overflow: hidden;
+
+}
+
+.portfolio .work-box:hover img{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    
+}
+
+.portfolio .work-box a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+
+.portfolio .work-box p span{
+    color: blue;
+
+}
+
+.portfolio .work-box p {
+    max-width: 200px;
+    
+}
+
+.portfolio .work-box{
+    box-shadow: 1px 0px 5px 1px;
+    border-radius: 20px ;
+}
+
+
