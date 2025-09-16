@@ -1,0 +1,29 @@
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.8rem !important;  /* main text */
+  }
+
+  .header span {
+    font-size: 1rem !important;  /* jobs (developer, freelancer..) */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .about .p-info {
+    flex-direction: column !important; /* make image above and text down it*/
+    align-items: center;
+    text-align: center;
+  }
+
+  .about .p-info img {
+    height: auto !important;  /* delet h-75 */
+    max-width: 250px;          /* make its size suitable */
+  }
+
+  .about .heading {
+    margin-top: 20px; /* make spaces under image */
+    padding: 0 !important;
+  }
+}
