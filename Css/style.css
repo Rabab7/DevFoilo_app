@@ -82,21 +82,6 @@ html{
    
 }
 
-.header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header .container h1 {
-  margin-bottom: 20px; /* make space betwwen name and job */
-}
-
-.header .container span {
-  margin: 0 5px;   /* make horizental space instead of move down*/
-}
-
-
 .header span {
     font-family: monospace;
     display: inline-block;
