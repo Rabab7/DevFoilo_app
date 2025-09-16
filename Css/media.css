@@ -9,6 +9,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .header .container span {
+    display: inline-block;
+    margin: 0 3px;
+  }
+}
 
 @media (max-width: 576px) {
   .about .p-info {

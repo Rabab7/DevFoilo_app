@@ -48,6 +48,28 @@ html{
 }
 
 
+/* navbar style */
+
+.navbar a{
+    position: relative;
+    
+}
+
+.navbar a::before{
+    content:"";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 1%;
+    bottom: -2px;
+    background-color: brown;
+    
+}
+
+.navbar a:hover::before{
+    width: 40px;
+    
+}
 
 /* header style */
 
@@ -58,6 +80,20 @@ html{
     background-size: contain;
     background-attachment: fixed;
    
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .container h1 {
+  margin-bottom: 20px; /* make space betwwen name and job */
+}
+
+.header .container span {
+  margin: 0 5px;   /* make horizental space instead of move down*/
 }
 
 
@@ -128,28 +164,6 @@ html{
     
 }
 
-/* navbar style */
-
-.navbar a{
-    position: relative;
-    
-}
-
-.navbar a::before{
-    content:"";
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    left: 1%;
-    bottom: -2px;
-    background-color: brown;
-    
-}
-
-.navbar a:hover::before{
-    width: 40px;
-    
-}
 
 /* about style */
 .about .container{
